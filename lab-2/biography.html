@@ -2,23 +2,54 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Персональна сторінка</title>
+  <title>Автобіографія</title>
   <style>
     h1 {
       text-align: center;
-      font-size: 24px;
+      font-size: 22px;
     }
-    p {
+    a[href="index.html"] {
+      font-style: italic;
+    }
+    h3 {
+      text-align: center;
+    }
+    .toc-link:link, .toc-link:visited {
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      background-color: blue;
+      color: white;
+      border: 2px solid #00008b;
+      padding: 6px;
+      text-decoration: none;
+      margin: 2px;
+    }
+    .toc-link:hover {
+      background-color: magenta;
+      color: white;
+    }
+    .toc-link:active {
+      background-color: yellow;
+      color: black;
+    }
+    article {
       font-size: 120%;
     }
-    a[href*="biography"]:link { color: #0055ff; }
-    a[href*="biography"]:visited { color: #8800cc; }
-    a[href*="nowadays"]:link { color: #008800; }
-    a[href*="nowadays"]:visited { color: #996600; }
-    a[href*="friends"]:link { color: #cc5500; }
-    a[href*="friends"]:visited { color: #cc0066; }
-    a[href*="gallery"]:link { color: #008888; }
-    a[href*="gallery"]:visited { color: #000088; }
+    article h2 {
+      font-size: 120%;
+    }
+    .section-1 p { background-color: #e6f2ff; color: #003366; }
+    .section-2 p { background-color: #ffe6f0; color: #660033; }
+    .section-3 p { background-color: #e6ffe6; color: #004d1a; }
+    .section-4 p { background-color: #fff0c2; color: #4d3300; }
+    .section-5 p { background-color: #f2e6ff; color: #4a148c; }
+    .to-toc {
+      font-weight: bold;
+    }
+    .to-top {
+      text-transform: uppercase;
+    }
   </style>
 </head>
 <body>
