@@ -64,7 +64,6 @@ body {
   color: #222222;
 }
 
-/* Адаптивність через Flex-basis та ширину */
 @media (max-width: 768px) {
   .col-sm-12 {
     flex: 0 0 100%;
