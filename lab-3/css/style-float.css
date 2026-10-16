@@ -1,1 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  padding: 15px;
+}
+
+.card {
+  position: relative;
+  background-color: #d8e8d8;
+  border: 2px solid #000000;
+  padding: 45px 15px 15px 15px;
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.caption-1 {
+  background-color: #e69500;
+  color: #000000;
+}
+
+.caption-2 {
+  background-color: #d8006f;
+  color: #ffffff;
+}
+
+.caption-3 {
+  background-color: #fce0d8;
+  color: #000000;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222222;
+}
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (min-width: 768.1px) and (max-width: 992px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (min-width: 992.1px) {
+  .col-lg-4 {
+    width: 33.33333%;
+    float: left;
+  }
+}
+
+.navigation-links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #555555;
+}
